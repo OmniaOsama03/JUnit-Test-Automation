@@ -3,18 +3,20 @@ package org.example;
 import org.junit.jupiter.api.DisplayName;
 
 import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+
 
 
 class MainTest {
 
-    @org.junit.jupiter.api.Test
+    @Test
     @DisplayName("Add two numbers")
     void add()
     {
         assertEquals(4, Main.add(2, 2));
     }
 
-    @org.junit.jupiter.api.Test
+    @Test
     @DisplayName("Multiply two numbers")
     void multiply() {
         assertAll(() -> assertEquals(4, Main.multiply(2, 2)),
